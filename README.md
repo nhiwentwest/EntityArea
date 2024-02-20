@@ -92,8 +92,9 @@ pdf:
 ```
 
 
-### Entities list
-
+### Lists
+<details>
+<summary>Entities list list</summary>
 
 ```cpp
 
@@ -143,12 +144,9 @@ ZombieVillager
 
 ```
 
-### Armor list
 
 <details>
 <summary>Armor list</summary>
-
-
 
 ```cpp
 CHAINMAIL_HELMET
@@ -169,3 +167,8 @@ DIAMOND_LEGGINGS
 DIAMOND_BOOTS
 ```
 </details>
+
+### Donate
+```cpp
+http://paypal.com/nhiwentwest
+```
