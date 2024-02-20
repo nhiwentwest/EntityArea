@@ -2,8 +2,8 @@
 The Entity Area is a tool designed to assist users in managing entities within one or multiple areas, focusing specifically on entities with attack attributes.
 
 ## Features
-### Entity Management: Easily set the number of a specific type of entity located in a designated area.
-### Attribute Customization: Adjust various attributes of the entity including:
+1. Entity Management: Easily set the number of a specific type of entity located in a designated area, with the assurance that the specified number of entities is maintained. Additionally, if an entity is defeated by a player, another entity will automatically spawn at a random coordinate within the same area to ensure the desired quantity of entities is consistently present.
+2. Attribute Customization: Adjust various attributes of the entity including:
 - Damage
 - Health
 - Speed
