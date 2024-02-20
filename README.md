@@ -143,7 +143,7 @@ Zombie
 ZombieVillager
 
 ```
-
+</details>
 
 <details>
 <summary>Armor list</summary>
