@@ -4,5 +4,6 @@ branches:
 - main
 projects:
   EntityArea:
-    path: "icon.png"
+    path: "plugin.yml"
+    icon: "icon.png"
 ...
