@@ -1,0 +1,26 @@
+name: EntityArea
+version: 0.0.1
+api: [5.0.0]
+author: nhiwentwest
+main: nhiwentwest\EntityArea\Main
+description: Customize the number of entities in a specific area
+
+
+
+commands:
+  enti:
+    usage: "/enti create|pos1|pos2"
+    description: "Create an area for specific entity"
+    permission: entityarea.enti
+  clearmobs:
+    usage: "/clearmobs"
+    description: "Clear all entities"
+    permission: entityarea.clear
+    
+permissions:
+  entityarea.plugin:
+    default: false
+  entityarea.enti:
+    default: false
+  entityarea.clear:
+    default: false
