@@ -145,6 +145,11 @@ ZombieVillager
 
 ### Armor list
 
+<details>
+<summary>Armor list</summary>
+
+
+
 ```cpp
 CHAINMAIL_HELMET
 CHAINMAIL_CHESTPLATE
@@ -163,3 +168,4 @@ DIAMOND_CHESTPLATE
 DIAMOND_LEGGINGS
 DIAMOND_BOOTS
 ```
+</details>
