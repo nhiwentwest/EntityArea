@@ -1,7 +1,8 @@
 # EntityArea
 The Entity Area is a tool designed to assist users in managing entities within one or multiple areas, focusing specifically on entities with attack attributes.
-Entity Management: Easily set the number of a specific type of entity located in a designated area.
+
 ## Features
+Entity Management: Easily set the number of a specific type of entity located in a designated area.
 Attribute Customization: Adjust various attributes of the entity including:
 - Damage
 - Health
