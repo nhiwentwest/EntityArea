@@ -87,10 +87,7 @@ class Motion {
         if ($entity->getTimer() > 0) {
             return;
         }
-        if ($entity->isInsideOfSolid()) {
-       
-            $entity->kill();
-        }
+  
         
  
 
@@ -216,15 +213,14 @@ class Motion {
                 $entity->setDestination(new Vector3(0, 0, 0));
             }
         } else {
-            $diff = abs($x) + abs($z);
+        $diff = abs($x) + abs($z);
 
-            $randomFactorX = $x / $diff + (rand(-5, 5) / 10); // Thêm yếu tố ngẫu nhiên vào phần ($x / $diff)
-            $randomFactorZ = $z / $diff + (rand(-5, 5) / 10); // Thêm yếu tố ngẫu nhiên vào phần ($z / $diff)
+            $randomFactorX = $x / $diff + (rand(-5, 5)/10); 
+            $randomFactorZ = $z / $diff + (rand(-1, 1));
 
-            $motion->x = $speed * 0.15 * $randomFactorX; // Sử dụng phần có yếu tố ngẫu nhiên cho motion x
-            $motion->y = 0;
-            $motion->z = $speed * 0.15 * $randomFactorZ; // Sử dụng phần có yếu tố ngẫu nhiên cho motion z
-
+            $motion->x = $speed * 0.15 + $randomFactorX;
+          $motion->y = 0;
+            $motion->z = $speed * 0.15 * $randomFactorZ;
 
 
 
