@@ -121,7 +121,8 @@ class Main extends PluginBase implements Listener {
             $config->set($areaName, $data);
             $config->save();
             $config->reload();
-            
+            $this->pos1flag = false;
+	    $this->$pos2flag = false;    
            $this->sender->sendMessage(TextFormat::AQUA . "Customize the area in the config to suit your preferences!");
 
         }
