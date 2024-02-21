@@ -121,7 +121,7 @@ class Motion {
         if ($entity->isCollidedHorizontally == true and $swimming == false) {
                 if ($block1 === BlockTypeIds::AIR && $block2 === BlockTypeIds::AIR && $block3 === BlockTypeIds::AIR) {
        
-                    $motion->y = 0.3;
+                    $motion->y = 0.42;
                   
                 }
          
