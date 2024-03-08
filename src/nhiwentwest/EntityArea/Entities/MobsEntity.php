@@ -11,11 +11,11 @@ use pocketmine\entity\Living;
 use pocketmine\math\Vector3;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
-use nhiwentwest\EntityArea\Custom\Attributes;
+use nhiwentwest\EntityArea\Tgwaste\Attributes;
 use nhiwentwest\EntityArea\Main;
-use nhiwentwest\EntityArea\Custom\Motion;
-use nhiwentwest\EntityArea\Custom\Spawn;
-use nhiwentwest\EntityArea\Custom\Registrations;
+use nhiwentwest\EntityArea\Tgwaste\Motion;
+use nhiwentwest\EntityArea\Tgwaste\Spawn;
+use nhiwentwest\EntityArea\Tgwaste\Registrations;
 
 class MobsEntity extends Living {
     const TYPE_ID = "";
