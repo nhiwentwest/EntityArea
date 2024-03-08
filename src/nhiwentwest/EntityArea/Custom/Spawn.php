@@ -222,7 +222,7 @@ class Spawn {
 
 
                 $entity->spawnToAll();
-
+                $this->deSpawnMobs();
 
             }
             
