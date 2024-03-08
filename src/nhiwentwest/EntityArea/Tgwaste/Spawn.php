@@ -1,6 +1,6 @@
 <?php
 
-namespace nhiwentwest\EntityArea\Custom;
+namespace nhiwentwest\EntityArea\Tgwaste;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\entity\Entity;
@@ -28,9 +28,9 @@ use pocketmine\block\BlockTypeIds;
 use nhiwentwest\EntityArea\Main;
 
 
-use nhiwentwest\EntityArea\Custom\MobsEntity;
-use nhiwentwest\EntityArea\Custom\Motion;
-use nhiwentwest\EntityArea\Custom\Listen;
+use nhiwentwest\EntityArea\Tgwaste\MobsEntity;
+use nhiwentwest\EntityArea\Tgwaste\Motion;
+use nhiwentwest\EntityArea\Tgwaste\Listen;
 
 
 
