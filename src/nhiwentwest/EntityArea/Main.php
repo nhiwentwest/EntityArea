@@ -112,6 +112,7 @@ class Main extends PluginBase implements Listener {
                 'damage' => 4,
                 'health' => 20,
                 'speed' => 1.00,
+                'number' => 3,
                 'armor' => ['none', 'none', 'none', 'none']
             ];
            
@@ -121,8 +122,7 @@ class Main extends PluginBase implements Listener {
             $config->set($areaName, $data);
             $config->save();
             $config->reload();
-            $this->pos1flag = false;
-	    $this->$pos2flag = false;    
+            
            $this->sender->sendMessage(TextFormat::AQUA . "Customize the area in the config to suit your preferences!");
 
         }
