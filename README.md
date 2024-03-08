@@ -29,7 +29,7 @@ First, use the following command to create an area:
 /enti create <name>
 ```
 
-When using the command above, replace <name> with the desired name of your entity. This custom name will be assigned to the area, making it easier to manage the entity later.
+Please note that when you name that area, the name will also be set for your entity's name. This is for easier management of entities within the area.
 
 Second, mark the first position (pos1) of the area by using:
 ```php
