@@ -268,25 +268,31 @@ class Main extends PluginBase implements Listener {
         }
      
         
-        if ($label === "clearmobs") {
+    if ($label === "clearmobs") {
 
-		foreach (Main::$instance->getServer()->getWorldManager()->getWorlds() as $world) {
-			foreach ($world->getEntities() as $entity) {
-		
+            if ($sender instanceof Player) {
 
-				if ($entity instanceof Player) {
-					continue;
-				}
+           foreach (Main::$instance->getServer()->getWorldManager()->getWorlds() as $world) {
+               foreach ($world->getEntities() as $entity) {
 
-				if ($entity instanceof MobsEntity) {
-			
-					$entity->kill();
-				}
-			}
-		}
-	
-                    return true;
+
+                   if ($entity instanceof Player) {
+                       continue;
+                   }
+
+                   if ($entity instanceof MobsEntity) {
+
+                       $entity->kill();
+                   }
+               }
+           }
                 }
+            else {
+                Main::$instance->getLogger()->info("Please run command as a player.");
+            }
+
+                       return true;
+                   }
 
 
         return false;
