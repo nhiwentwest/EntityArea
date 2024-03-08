@@ -28,7 +28,7 @@ use pocketmine\block\BlockTypeIds;
 use nhiwentwest\EntityArea\Main;
 
 
-use nhiwentwest\EntityArea\Tgwaste\MobsEntity;
+use nhiwentwest\EntityArea\Entities\MobsEntity;
 use nhiwentwest\EntityArea\Tgwaste\Motion;
 use nhiwentwest\EntityArea\Tgwaste\Listen;
 
@@ -248,7 +248,7 @@ class Spawn {
 
 
         if (!isset($data["pos1"], $data["pos2"], $data["entity"], $data["world"], $data["damage"], $data["health"], $data["speed"], $data["armor"])) {
-            $this->getLogger()->warning("Invalid data format for area '{$areaname}' in config.");
+            Main::$instance->getLogger()->warning("Invalid data format for area '{$areaname}' in config.");
             return;
         }
 
