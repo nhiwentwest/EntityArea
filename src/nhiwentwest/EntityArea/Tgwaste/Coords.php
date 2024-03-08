@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace nhiwentwest\EntityArea\Custom;
+namespace nhiwentwest\EntityArea\Tgwaste;
 
 use pocketmine\block\Water;
 use pocketmine\math\Vector3;
