@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace nhiwentwest\EntityArea\Custom;
+namespace nhiwentwest\EntityArea\Tgwaste;
 
 use pocketmine\data\bedrock\LegacyEntityIdToStringIdMap;
 use pocketmine\entity\EntityDataHelper;
