@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace nhiwentwest\EntityArea\Custom;
+namespace nhiwentwest\EntityArea\Tgwaste;
 
 use pocketmine\command\CommandSender;
 use pocketmine\entity\Entity;
