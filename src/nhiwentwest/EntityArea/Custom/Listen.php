@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace nhiwentwest\EntityArea\Custom;
+namespace nhiwentwest\EntityArea\Tgwaste;
 
 
 
@@ -24,7 +24,7 @@ use pocketmine\player\Player;
 
 use nhiwentwest\EntityArea\Entities\MobsEntity;
 
-use nhiwentwest\EntityArea\Custom\Spawn;
+use nhiwentwest\EntityArea\Tgwaste\Spawn;
 use nhiwentwest\EntityArea\Main;
 
 class Listen implements Listener {
