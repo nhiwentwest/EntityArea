@@ -269,9 +269,22 @@ class Main extends PluginBase implements Listener {
      
         
         if ($label === "clearmobs") {
- $this->spawnobj->countEntity();
-    
-      
+
+		foreach (Main::$instance->getServer()->getWorldManager()->getWorlds() as $world) {
+			foreach ($world->getEntities() as $entity) {
+		
+
+				if ($entity instanceof Player) {
+					continue;
+				}
+
+				if ($entity instanceof MobsEntity) {
+			
+					$entity->kill();
+				}
+			}
+		}
+	
                     return true;
                 }
 
