@@ -8,6 +8,7 @@ The Entity Area is a tool designed to assist users in managing entities within o
 - Health
 - Speed
 - Armor
+3. Entities perform fundamental actions, such as moving and attacking players.
 ## Commands
 
 1. **/enti**:
@@ -27,6 +28,8 @@ First, use the following command to create an area:
 ```php
 /enti create <name>
 ```
+
+When using the command above, replace <name> with the desired name of your entity. This custom name will be assigned to the area, making it easier to manage the entity later.
 
 Second, mark the first position (pos1) of the area by using:
 ```php
