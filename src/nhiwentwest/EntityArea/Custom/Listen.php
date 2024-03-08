@@ -28,6 +28,16 @@ use nhiwentwest\EntityArea\Custom\Spawn;
 use nhiwentwest\EntityArea\Main;
 
 class Listen implements Listener {
+    
+    public bool $isthisfirst = true;
+
+    public function onPlayerJoin(PlayerJoinEvent $event): void {
+     if ($this->isthisfirst) {
+         Main::$instance->spawnobj->countEntity();
+         $this->isthisfirst = false;
+         }
+      }
+	
 	public function onEntityDamageByEntityEvent(EntityDamageByEntityEvent $event) {
 		$entity = $event->getEntity();
 	}
