@@ -13,7 +13,7 @@ pdf:
  damage: 4
  health: 20
  speed: 1.00
- number: 10
+ number: 1
  armor:
   - CHAINMAIL_HELMET
   - CHAINMAIL_CHESTPLATE
