@@ -32,13 +32,13 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\WorldEvent;
 
-use nhiwentwest\EntityArea\Custom\Spawn;
-use nhiwentwest\EntityArea\Custom\Attributes;
-use nhiwentwest\EntityArea\Custom\Tools;
-use nhiwentwest\EntityArea\Custom\Registrations;
-use nhiwentwest\EntityArea\Custom\Coords;
-use nhiwentwest\EntityArea\Custom\Motion;
-use nhiwentwest\EntityArea\Custom\Listen;
+use nhiwentwest\EntityArea\Tgwaste\Spawn;
+use nhiwentwest\EntityArea\Tgwaste\Attributes;
+use nhiwentwest\EntityArea\Tgwaste\Tools;
+use nhiwentwest\EntityArea\Tgwaste\Registrations;
+use nhiwentwest\EntityArea\Tgwaste\Coords;
+use nhiwentwest\EntityArea\Tgwaste\Motion;
+use nhiwentwest\EntityArea\Tgwaste\Listen;
 
 class Main extends PluginBase implements Listener {
     
