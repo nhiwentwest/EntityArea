@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace nhiwentwest\EntityArea\Custom;
+namespace nhiwentwest\EntityArea\Tgwaste;
 
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\entity\EntityDamageEvent;
@@ -15,14 +15,14 @@ use pocketmine\world\Position;
 use pocketmine\block\Block;
 use pocketmine\block\BlockTypeIds;
 use pocketmine\entity\Living;
-use nhiwentwest\EntityArea\Custom\Coords;
-use nhiwentwest\EntityArea\Custom\Listen;
-use nhiwentwest\EntityArea\Custom\Registrations;
-use nhiwentwest\EntityArea\Custom\Attributes;
+use nhiwentwest\EntityArea\Tgwaste\Coords;
+use nhiwentwest\EntityArea\Tgwaste\Listen;
+use nhiwentwest\EntityArea\Tgwaste\Registrations;
+use nhiwentwest\EntityArea\Tgwaste\Attributes;
 
 
 
-use nhiwentwest\EntityArea\Custom\Tools;
+use nhiwentwest\EntityArea\Tgwaste\Tools;
 
 
 
