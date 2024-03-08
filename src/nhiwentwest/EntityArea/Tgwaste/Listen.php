@@ -20,6 +20,7 @@ use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\entity\EntityDespawnEvent;
 use pocketmine\event\entity\EntitySpawnEvent;
 use pocketmine\event\entity\EntityDeathEvent;
+use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\player\Player;
 
 use nhiwentwest\EntityArea\Entities\MobsEntity;
@@ -75,24 +76,4 @@ class Listen implements Listener {
     }
 
   
-    private function isPositionInBoundBox(Vector3 $position, Vector3 $pos1, Vector3 $pos2, Entity $entity): bool {
-        $minX = min($pos1->x, $pos2->x);
-        $maxX = max($pos1->x, $pos2->x);
-        $minY = min($pos1->y, $pos2->y);
-        $maxY = max($pos1->y, $pos2->y);
-        $minZ = min($pos1->z, $pos2->z);
-        $maxZ = max($pos1->z, $pos2->z);
-
-        $boundingBox = new AxisAlignedBB($minX, $minY, $minZ, $maxX, $maxY, $maxZ);
-        
-   
-        
-        if ($entity->getBoundingBox()->intersectsWith($boundingBox)){
-           
-            return true;
-            }
-        
-
-        return false;
-    }    
 }
