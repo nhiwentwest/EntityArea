@@ -46,7 +46,7 @@ class MobsEntity extends Living {
         $speedmen = (float) number_format(Spawn::$speed, 2);
 
         $this->setCanClimb(false);
-        $this->canClimbWalls(false);
+        $this->setCanClimbWalls(false);
         $this->setNoClientPredictions(false);
         $this->setHealth($healthmen);
         $this->setMaxHealth($healthmen);
