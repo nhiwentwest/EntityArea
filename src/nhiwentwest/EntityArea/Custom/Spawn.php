@@ -82,7 +82,7 @@ class Spawn {
             $world = $worldManager->getWorldByName($worldname);
             Server::getInstance()->getWorldManager()->loadWorld($worldname);
 
-   
+
             $pos1 = new Vector3($pos1Data[0], $pos1Data[1], $pos1Data[2]);
             $pos2 = new Vector3($pos2Data[0], $pos2Data[1], $pos2Data[2]);
 
@@ -222,7 +222,7 @@ class Spawn {
 
 
                 $entity->spawnToAll();
-                $this->deSpawnMobs();
+               
 
             }
             
