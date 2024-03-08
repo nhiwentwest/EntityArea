@@ -84,8 +84,7 @@ class Main extends PluginBase implements Listener {
         $this->regainhealth = $this->getConfig()->get("regainhealth");
         (new Registrations)->registerEntities();
         
-        $this->spawnobj->countEntity();
-     
+
     
         }
 
