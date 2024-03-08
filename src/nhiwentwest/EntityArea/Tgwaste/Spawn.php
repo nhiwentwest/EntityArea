@@ -6,6 +6,8 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\entity\Entity;
 use pocketmine\world\World;
 use pocketmine\entity\Living;
+use pocketmine\player\Player;
+use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\entity\EntitySpawnEvent;
@@ -17,11 +19,10 @@ use pocketmine\item\Item;
 use pocketmine\item\VanillaItems;
 use pocketmine\inventory\Inventory;
 use pocketmine\block\inventory\DoubleChestInventory;
-
+use pocketmine\block\Water;
 use pocketmine\scheduler\Task;
 use pocketmine\Server;
-use pocketmine\Player;
-use pocketmine\event\player\PlayerJoinEvent;
+
 
 
 use pocketmine\block\BlockTypeIds;
@@ -43,9 +44,8 @@ class Spawn {
     public static $health = 20;
     public static $speed = 1;
     public static $areaname;
-    private $count = 0;
 
-    private $processedEntityIds = [];
+
 
 
     public function countEntity() : void {
