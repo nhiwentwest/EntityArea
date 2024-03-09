@@ -267,14 +267,6 @@ class Main extends PluginBase implements Listener {
 
                     if ($config->exists($areaNameToRemove)) {
                         $config->remove($areaNameToRemove);
-                  
-             $config->remove("pos1", true);
-             $config->remove("pos2", true);
-             $config->remove("damage", true);
-             $config->remove("health", true);
-             $config->remove("speed", true);
-             $config->remove("armor", true);
-             $config->remove("number", true);
                         $config->save();
                         $sender->sendMessage("$areaNameToRemove has been removed sucessfully.");
                     } else {
