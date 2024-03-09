@@ -259,10 +259,37 @@ class Main extends PluginBase implements Listener {
      $this->getLogger()->info("Please run command as a player.");
 
                 return true;
+            }   elseif ($args[0] === "remove") {
+                if (isset($args[1])) {
+                    $areaNameToRemove = strtolower($args[1]);
+
+                    $config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
+
+                    if ($config->exists($areaNameToRemove)) {
+                        $config->remove($areaNameToRemove);
+                  
+             $config->remove("pos1", true);
+             $config->remove("pos2", true);
+             $config->remove("damage", true);
+             $config->remove("health", true);
+             $config->remove("speed", true);
+             $config->remove("armor", true);
+             $config->remove("number", true);
+                        $config->save();
+                        $sender->sendMessage("$areaNameToRemove has been removed sucessfully.");
+                    } else {
+                        $sender->sendMessage(TextFormat::RED . "$areaNameToRemove has not exist.");
+                    }
+                    return true;
+                } else {
+                    $sender->sendMessage(TextFormat::RED . "/enti remove <name>");
+                    return false;
+                }
             }
+		
 
             
-            $this->getLogger()->info("/enti create <name>");
+            $this->getLogger()->info("/enti create|remove <name>");
             return true;
         }
      
