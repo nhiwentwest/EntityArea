@@ -12,7 +12,7 @@ The Entity Area is a tool designed to assist users in managing entities within o
 ## Commands
 
 1. **/enti**:
-   - **Usage**: `/enti create|pos1|pos2`
+   - **Usage**: `/enti create|pos1|pos2|remove`
    - **Description**: Creates an area for a specific entity.
    - **Permission**: `entityarea.enti`
 
