@@ -9,7 +9,7 @@ description: Customize the number of entities in a specific area
 
 commands:
   enti:
-    usage: "/enti create|pos1|pos2"
+    usage: "/enti create|pos1|pos2|remove"
     description: "Create an area for specific entity"
     permission: entityarea.enti
   clearmobs:
